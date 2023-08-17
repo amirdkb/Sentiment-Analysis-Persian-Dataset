@@ -10,13 +10,13 @@ install necessary libraries using following command
 pip install pandas scikit-learn hazm
 ```
 ### Dataset 
-This sentiment analysis project utilizes two datasets: train.csv and test.csv. These datasets are crucial components for training and evaluating our sentiment analysis model on Persian text data.the `test.csv` contains sentences without labels and we are going to predict their labels and save them in another file with name `test_with_label.csv`.
+This sentiment analysis project utilizes two datasets: train.csv and test.csv. These datasets are crucial components for training and evaluating our sentiment analysis model on Persian text data.the `test.csv` contains sentences without labels and we are going to predict their labels and save them in another file with name `test_with_label.csv`.<br>
 
-`train.csv`
-The train.csv dataset is designed for training our sentiment analysis model. It contains a collection of text samples in Persian, paired with corresponding sentiment labels.
-`test.csv`
-The test.csv dataset is used to evaluate the performance of our trained sentiment analysis model. Similar to train.csv, it contains text samples in Persian, but it does not include sentiment labels.
-`test_with_label.csv`
+`train.csv`<br>
+The train.csv dataset is designed for training our sentiment analysis model. It contains a collection of text samples in Persian, paired with corresponding sentiment labels.<br>
+`test.csv`<br>
+The test.csv dataset is used to evaluate the performance of our trained sentiment analysis model. Similar to train.csv, it contains text samples in Persian, but it does not include sentiment labels.<br>
+`test_with_label.csv`<br>
 This file is result file after execution, it is test data with predicted labels. 
 ### Implementation 
 We utilized a Linear Support Vector Machine (SVM) model for analyzing this dataset. The model was trained and evaluated using the training data to gauge its effectiveness. Subsequently, the trained model was saved with name `trained_model.pkl`. This saved model can be effectively employed to predict labels for new samples.
